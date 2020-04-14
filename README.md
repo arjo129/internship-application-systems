@@ -25,7 +25,7 @@ For example:
 ```
 mping www.google.com
 ```
-```
+
 You can also set TTL like so:
 ```
 mping <hostname or ip> <TTL>
