@@ -1,15 +1,14 @@
 use std::env;
 use std::process;
 use std::io::ErrorKind;
-use std::net::{ Ipv4Addr, IpAddr, SocketAddrV4, ToSocketAddrs};
+use std::net::{ ToSocketAddrs};
 use std::time::{Duration, SystemTime};
-use std::collections::HashSet;
 use socket2::{Socket, Domain, Protocol, SockAddr, Type}; 
 
 const ECHO_REQUEST_TYPE: u8 = 8;
 const ECHO_REQUEST_CODE: u8 = 0;
-const ECHO_REPLY_TYPE: u8 = 129;
-const ECHO_REPLY_CODE: u8 = 0;
+//const ECHO_REPLY_TYPE: u8 = 129;
+//const ECHO_REPLY_CODE: u8 = 0;
 const ECHO_TTL_EXCEEDED: u8 = 11;
 
 const TX_INTERVAL: u64 = 200;
